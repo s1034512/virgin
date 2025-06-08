@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作者簡介</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="append2.js"></script>
+    <style>
+        .author,.movie{
+            width: 80%;
+            height: auto;
+            margin: 30px 10%;
+            border-radius: 12px;
+        }
+        .author p{
+            text-indent: 2em;
+            font-size: 30px;
+            margin: 20px 20px;
+            color: hotpink;
+        }
+        .movie{
+            display: flex;
+            justify-content: space-between;
+        }
+        .movie ul{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        .movie ul li{
+            width: calc(100%/3.2);
+            margin: 50px 1%;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 1px 3px 3px darkgray;
+            padding: 20px 40px;
+        }
+        .movie ul li img{
+            width: 100%;
+            height: 390px;
+            display: block;
+            margin: 10px   auto;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 1px 3px 3px darkgray;
+        }
+        .movie ul li img:hover{
+            transition: all .3s;
+            box-shadow: 6px 6px 10px darkgray;
+        }
+        .movie ul li .username{
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 70px;
+            color: hotpink;
+        }
+        .movie ul li .msgs{
+            line-height: 30px;
+            font-size: 20px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner"></div>
+    <h4 class="title">作者簡介</h4>
+    <div class="author">
+        <p>宮崎 駿（宮﨑 駿、みやざき はやお、1941年1月5日 - ）は、日本のアニメ監督、アニメーター。株式会社スタジオジブリ取締役名誉会長、公益財団法人徳間記念アニメーション文化財団理事長、三鷹市立アニメーション美術館（三鷹の森ジブリ美術館）名誉館主（初代館主）。</p>
+        <p>1963年に東映動画にアニメーターとして入社。その後いくつかの会社を経てフリーとなり、その間にテレビアニメ『未来少年コナン』、初の劇場用アニメーション『ルパン三世 カリオストロの城』で頭角を現した。</p>
+        <p>1984年に個人事務所の二馬力を設立し、翌年に高畑勲らとアニメーション制作会社スタジオジブリを設立（2023年に取締役名誉会長に就任）。以後『天空の城ラピュタ』『となりのトトロ』『魔女の宅急便』『紅の豚』などの数々の劇場用アニメーションを監督し、芸術的にも興行的にも高く評価され、日本アニメーション界の第一人者として世界的に知られることとなった。</p>
+        <p>1997年公開の『もののけ姫』は、興行収入193億円、観客動員数1420万人を記録し、日本の歴代興行収入記録を塗り替えた。2001年公開の『千と千尋の神隠し』は、興行収入308億円、観客動員数2380万人を記録し、ベルリン国際映画祭金熊賞とアカデミー長編アニメ映画賞を受賞、世界三大映画祭では史上初のアニメーション映画の最高賞受賞となった。『君たちはどう生きるか』でアカデミー長編アニメ映画賞と英国アカデミー賞 アニメ映画賞を受賞した。また、『ハウルの動く城』でヴェネツィア国際映画祭金オゼッラ賞を受賞している。</p>
+        <p>2005年、ヴェネツィア国際映画祭栄誉金獅子賞を日本人としては黒澤明以来史上2人目に受賞。2014年には、アカデミー名誉賞を日本人としては黒澤明以来史上2人目に受賞した。2024年のカンヌ国際映画祭では、名誉パルム・ドール賞がスタジオジブリに授与され、受賞理由として宮﨑駿、高畑勲両名の名前が挙げられた。2012年文化功労者。</p>
+        <p>3度のアカデミー賞受賞は、黒澤明と並ぶ、日本人最多受賞記録である。</p>
+    </div>
+    <h4 class="title">作品展示</h4>
+    <div class="movie">
+        <ul>
+            <li>
+                <img src="https://www.ghibli.jp/images/nausicaa.jpg" alt="">
+                <div class="username">
+                    風の谷のナウシカ
+                </div>
+                <div class="msgs">
+                    「戦争による科学文明の崩壊後、異形の生態系に覆われた終末世界を舞台に、人と自然の歩むべき道を求める少女ナウシカの姿を描く。1984年には宮崎自身の監督による劇場版アニメ『風の谷のナウシカ』が公開された。2019年には歌舞伎化された。
+                </div>
+            </li>
+            <li>
+                <img src="https://www.ghibli.jp/gallery/laputa036.jpg" alt="">
+                <div class="username">
+                    天空の城ラピュタ
+                </div>
+                <div class="msgs">
+                    「ラピュタ」という名称は、スウィフトの『ガリヴァー旅行記』に登場する、空を飛ぶ島にある王国「ラピュタ王国（英語版）」からとったもの。劇中に空飛ぶ島の物語を空想した人物としてスウィフトの名前も出てくるが、名前の借用以外は『ガリヴァー旅行記』との関連はない。19世紀後半、産業革命期のヨーロッパを元にした架空世界での冒険を描く。
+                </div>
+            </li>
+            <li>
+                <img src="https://www.ghibli.jp/images/totoro.jpg" alt="">
+                <div class="username">
+                    となりのトトロ
+                </div>
+                <div class="msgs">
+                    本作の原型となる構想は、宮崎駿が1970年代に日本アニメーション、そしてテレコム・アニメーションフィルムに在籍していたころに書き連ねていたイメージボードに残されている。宮崎によれば、当初は本作品を絵本にするつもりであったという。その後イメージボードと企画書を東京ムービーに提出し、テレビスペシャルなどへの採用を模索していたとされるが、この企画は通っていない。
+                </div>
+            </li>
+            <li>
+                <img src="https://www.ghibli.jp/images/majo.jpg" alt="">
+                <div class="username">
+                    魔女の宅急便
+                </div>
+                <div class="msgs">
+                    シリーズ1作目『魔女の宅急便』は、主人公のキキが親元を離れ、知らない町で魔女として一人立ちする姿を描く。1982年から1983年にかけて『母の友』に連載された。その後シリーズ化され、福音館書店から刊行されている。表紙・挿画は第1巻が林明子、第2巻が広野多可子、第3 - 6巻と特別編3巻は佐竹美保がそれぞれ手がけた。2009年10月、最終巻『魔女の宅急便その6 それぞれの旅立ち』が刊行され、24年に亘って描かれた同シリーズは完結した。その後、特別編として3冊が刊行されている。
+                </div>
+            </li>
+            <li>
+                <img src="https://upload.wikimedia.org/wikipedia/zh/1/1f/Kureni.jpg" alt="">
+                <div class="username">
+                    紅の豚
+                </div>
+                <div class="msgs">
+                    『紅の豚』は「飛行艇時代」のあらすじを大筋で踏襲しているが、「飛行艇時代」にはポルコの過去のエピソードとそれに関わる人物（ジーナとフェラーリン）、ポルコが指名手配されファシスト政権に狙われるシーンなどシリアスな要素はなかった。また、原作ではピッコロ一族の男性が何名か登場するほか、マジョーレ湖で十分にテストをしてから出発するなどの相違点もある。この「飛行艇時代」は、大日本絵画より刊行された『飛行艇時代』（1992年、増補改訂版2004年）に再録されている。
+                </div>
+            </li>
+            <li>
+                <img src="https://www.ghibli.jp/images/mononoke.jpg" alt="">
+                <div class="username">
+                    もののけ姫
+                </div>
+                <div class="msgs">
+                    中世（室町時代の頃）の日本が舞台。東と北の間にあると言われるエミシの村に住む少年アシタカは、村を襲ったタタリ神と呼ばれる化け物を退治した際、右腕に死の呪（のろ）いを受けてしまう。その正体は、何者かに鉛のつぶてを撃ち込まれ、人への憎しみからタタリ神と化した巨大な猪神（ナゴの守）であった。アシタカは呪いのため村を追われ、呪いを絶つためにも猪神が来た西の地へと旅立つ。
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer"></div>
+
+    <script>
+        $(()=>{
+            $(".banner").css("background-image","url('https://spice.eplus.jp/images/tQpiB7KomrOD34ldpMeiqqfvszmbVuPQtHiD6ueCuyhmL4OMspdEKGysifPQzkHO/')")
+        })
+    </script>
+</body>
+</html>

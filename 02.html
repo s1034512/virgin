@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人物介紹</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="append2.js"></script>
+    <style>
+        body{
+            background-color: whitesmoke;
+        }
+        .words{
+            width: 80%;
+            height: auto;
+            margin: 20px 10%;
+            margin-bottom: 120px;
+            padding-bottom: 120px;
+        }
+        .words ul{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        .words ul li{
+            width: calc(100%/3.2);
+            margin: 50px 1%;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 1px 3px 3px darkgray;
+        }
+        .words ul li img{
+            width: 190px;
+            height: 190px;
+            display: block;
+            margin: 20px   auto;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 1px 3px 3px darkgray;
+        }
+        .words ul li img:hover{
+            transition: all .3s;
+            box-shadow: 6px 6px 10px darkgray;
+        }
+        .words ul li .username{
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 80px;
+        }
+        .words ul li .msgs{
+            line-height: 30px;
+            font-size: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner"></div>
+    <h4 class="title">人物介紹</h4>
+    <div class="words">
+        <ul>
+            <li>
+                <img src="https://www.ghibli.jp/gallery/chihiro023.jpg" alt="">
+                <div class="username">荻野 千尋<br>（おぎの ちひろ）</div>
+                <div class="msgs">
+                    本作の主人公である10歳の少女。荻野家の一人娘。家族の中で唯一入る前から異界を怪しんでいた。私服は白色に黄緑色のラインが入った半袖Tシャツに桃色の半ズボン。
+                </div>
+            </li>
+            <li>
+                <img src="https://www.ghibli.jp/gallery/chihiro022.jpg" alt="">
+                <div class="username">ハク<br>ニギハヤミコハクヌシ</div>
+                <div class="msgs">
+                    油屋で働いている色白の謎の美少年。外見年齢は12歳。湯屋の男の従業員の中で彼だけが子供に見え、彼の制服の水干は上着が白、袴が青、裸足に草履、何も被らない。緑がかった黒いおかっぱ頭で、常に涼しい顔をしている。湯婆婆の弟子であり魔法使いとしては見習いだが、番頭として湯屋の帳簿を預かっている為従業員達から一目置かれている。
+                </div>
+            </li>
+            <li>
+                <img src="https://www.ghibli.jp/gallery/chihiro016.jpg" alt="">
+                <div class="username">湯婆婆<br>（ゆばーば）</div>
+                <div class="msgs">
+                    湯屋「油屋」の経営者（当主）で正体不明の老魔女。目玉だけで人間の顔ほどの大きさがあるほど頭が大きく、二頭身という人間離れした体格。
+                </div>
+            </li>
+            <li>
+                <img src="https://www.ghibli.jp/gallery/chihiro017.jpg" alt="">
+                <div class="username">銭婆<br>（ぜにーば）</div>
+                <div class="msgs">
+                    湯婆婆の双子の姉で、坊の伯母。声や容姿、服装、髪型まで湯婆婆と瓜二つで、甥の坊が母である湯婆婆と間違えてしまう程。妹と同様に強い魔力を持つ魔女。
+                </div>
+            </li>
+            <li>
+                <img src="https://www.ghibli.jp/gallery/chihiro020.jpg" alt="">
+                <div class="username">カオナシ</div>
+                <div class="msgs">
+                    黒い影のような体にお面をつけたような姿をしている。
+言葉は話せず「ア」または「エ」といったか細い声を絞り出すのみ。コミュニケーションが取れない為、他人を飲み込んで声を借りる。その際はお面の下にある本物の口から話す。飲食するのもこの口からである。姿を消す力を持つ。
+                </div>
+            </li>
+            <li>
+                <img src="https://www.ghibli.jp/gallery/chihiro035.jpg" alt="">
+                <div class="username">坊（ぼう）<br> / 坊ネズミ</div>
+                <div class="msgs">
+                    湯婆婆の息子。だが湯婆婆のことは「お母さん」や「ママ」とは呼ばず、「ばぁば」と呼ぶ。白い字で「坊」と書かれた赤い腹掛けのみ身に付けており、母親の湯婆婆よりも2周り程はある巨大な赤ちゃんで、銭婆に「太り過ぎ」と評される肥満体型。
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer"></div>
+
+    <script>
+        $(()=>{
+            $(".banner").css("background-image", "url('https://www.ghibli.jp/gallery/chihiro042.jpg')");
+        });
+    </script>
+</body>
+</html>
